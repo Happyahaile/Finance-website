@@ -3,16 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Pricing Plans</title>
-  <style>
-    .basic-plan{
-        text-align: center;
-    }
-    .plan-features{
-        list-style-type: none;
-        padding: 0;
-        background-color: blue;
-    }
-  </style>
+  <link rel="stylesheet" href="Pricing.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,6 +23,8 @@
   <!-- Main Content Section -->
   <main class="pricing-page">
 
+    <p class="pricing-heading" >PRICING</p>
+
     <!-- Intro Section -->
     <section class="intro-section">
       <h2 class="page-title">Pricing plans for bookkeeping services</h2>
@@ -41,57 +35,100 @@
     </section>
 
     <!-- Basic Plan -->
-    <section class="pricing-card basic-plan">
-      <h3 class="plan-title">For Startups - Basic</h3>
-      <p class="plan-description">Ideal for: Startups with minimal transactions and Companies with less than 50 transactions per month</p>
-      <p class="price-range"><strong>ETB 5,000–10,000</strong></p>
-      <ul class="plan-features">
-        <p>What's included</p>
-        <li>Monthly Transaction Categorization/Review</li>
-        <li>Monthly Tax Preparation (Support your accountant)</li>
-        <li>Monthly Reconciliation</li>
-      </ul>
-      <button class="btn-get-started">Get started</button>
+    <section class="pricing-card-basic">
+      <div class="basic-left-section">
+        <div class="basic-left-content">
+          <div class="basic-intro-container">
+            <img class="basic-icon" src="Address-bro (1).png" alt="Basic Plan Icon">
+            <div class="basic-plan-intro-title">
+              <p class="basic-plan-intro">For Startups</p>
+              <h3 class="basic-plan-title">Basic</h3>
+            </div>
+          </div>
+          <p class="basic-plan-description">Ideal for: Startups with minimal transactions and Companies with <b>less than 50 transactions per month</b></p>
+          <p class="basic-price-range"><strong>ETB 5,000–10,000</strong></p>
+          <button class="btn-basic">Get started</button>
+        </div>
+      </div>
+      <div class="basic-right-section">
+        <div class="basic-right-content">  
+          <p class="basic-right-title">What's included</p>        
+          <ul class="basic-right-list">
+            <li class="basic-right-lists" >Monthly Transaction Categorization/Review</li>
+            <li class="basic-right-lists" >Monthly Tax Preparation (Support your accountant)</li>
+            <li class="basic-right-lists" >Monthly Reconciliation</li>
+          </ul>
+        </div>
+      </div>
+      
     </section>
 
     <!-- Standard Plan -->
-    <section class="pricing-card standard-plan">
-      <h3 class="plan-title">For Growing Startups - Standard</h3>
-      <p class="plan-description">Ideal for: Growing Startups and Companies with less than 50–200 transactions per month</p>
-      <p class="price-range"><strong>ETB 10,000–30,000</strong></p>
-      <ul class="plan-features">
-          <p>What's included</p>
-        <li>Weekly Transaction Categorization (Maintaining the General Ledger)</li>
-        <li>Payable and Receivable Tracking</li>
-        <li>Monthly Bank Reconciliation</li>
-        <li>Monthly and Yearly Tax declaration</li>
-        <li>Payroll Management</li>
-        <li>Dedicated Bookkeeper</li>
-      </ul>
-      <button class="btn-get-started">Get started</button>
+    <section class="pricing-card-standard">
+      <div class="standard-left-section">
+        <div class="standard-left-content">  
+          <p class="standard-left-title">What's included</p>        
+          <ul class="standard-left-list">
+            <li class="standard-left-lists">Weekly Transaction Categorization (Maintaining the General Ledger)</li>
+            <li class="standard-left-lists">Payable and Receivable Tracking</li>
+            <li class="standard-left-lists">Monthly Bank Reconciliation</li>
+            <li class="standard-left-lists">Monthly and Yearly Tax declaration</li>
+            <li class="standard-left-lists">Payroll Management</li>
+            <li class="standard-left-lists">Dedicated Bookkeeper</li>
+          </ul>
+        </div>
+      </div>
+      <div class="standard-right-section">
+        <div class="standard-right-content">
+          <div class="standard-intro-container">
+            <img class="standard-icon" src="Address-bro (1).png" alt="Standard Plan Icon">
+            <div class="standard-plan-intro-title">
+              <p class="standard-plan-intro">For Growing Startups</p>
+              <h3 class="standard-plan-title">Standard</h3>
+            </div>
+          </div>
+          <p class="standard-plan-description">Ideal for: Growing Startups and Companies with <b>less than 50–200 transactions per month</b></p>
+          <p class="standard-price-range"><strong>ETB 10,000–30,000</strong></p>
+          <button class="btn-standard">Get started</button>
+        </div>
+      </div>
     </section>
 
-    <!-- Premium Plan -->
-    <section class="pricing-card premium-plan">
-      <h3 class="plan-title">For Companies - Premium</h3>
-      <p class="plan-description">Ideal for: Companies with more than 200 transactions per month</p>
-      <p class="price-range"><strong>ETB 30,000–100,000</strong></p>
-      <ul class="plan-features">
-        <p>What's included</p>
-        <li>Full Bookkeeping Services</li>
-        <li>Advanced Reporting</li>
-        <li>Monthly and Yearly Tax declaration</li>
-        <li>Representation of the company during tax disputes</li>
-        <li>Monthly Reports to the Management</li>
-        <li>Dedicated Bookkeeper plus quarterly business review</li>
+<!-- Premium Plan -->
+<section class="pricing-card-premium">
+  <div class="premium-left-section">
+    <div class="premium-left-content">
+      <div class="premium-intro-container">
+        <img class="premium-icon" src="Address-bro (1).png" alt="Premium Plan Icon">
+        <div class="premium-plan-intro-title">
+          <p class="premium-plan-intro">For Companies</p>
+          <h3 class="premium-plan-title">Premium</h3>
+        </div>
+      </div>
+      <p class="premium-plan-description">Ideal for: Companies with <b>more than 200 transactions per month</b></p>
+      <p class="premium-price-range"><strong>ETB 30,000–100,000</strong></p>
+      <button class="btn-premium">Get started</button>
+    </div>
+  </div>
+  <div class="premium-right-section">
+    <div class="premium-right-content">  
+      <p class="premium-right-title">What's included</p>        
+      <ul class="premium-right-list">
+        <li class="premium-right-lists">Full Bookkeeping Services</li>
+        <li class="premium-right-lists">Advanced Reporting</li>
+        <li class="premium-right-lists">Monthly and Yearly Tax declaration</li>
+        <li class="premium-right-lists">Representation of the company during tax disputes</li>
+        <li class="premium-right-lists">Monthly Reports to the Management</li>
+        <li class="premium-right-lists">Dedicated Bookkeeper plus quarterly business review</li>
       </ul>
-      <button class="btn-get-started">Get started</button>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <!-- Custom Offer Section -->
     <section class="custom-offer">
-      <h3>For services other than Bookkeeping</h3>
-      <p>Please contact us to get offer.</p>
+      <P id="custom-offer-text">For services other than Bookkeeping, <br> Please contact us to get offer.</p>
       <button class="btn-get-offer">Get offer</button>
     </section>
 
@@ -99,24 +136,18 @@
 
   <!-- Footer Section -->
   <footer class="footer">
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h4>Home</h4>
-        <p>About us</p>
-      </div>
-      <div class="footer-column">
-        <h4>Services</h4>
-        <p>Bookkeeping services</p>
-        <p>Catch-up Bookkeeping</p>
-        <p>Tax and advisory</p>
-      </div>
-      <div class="footer-column">
-        <h4>Contact</h4>
-        <p>Email: info@gmail.com</p>
-        <p>Other phone number</p>
-        <p>Bookkeeping</p>
-        <p>+251.......</p>
-      </div>
+    <div class="footer-links-section">
+        <h4 class="link-texts"><a href="Home.html" class="footer-links">Home</a></h4>
+        <h4 class="link-texts"><a href="Aboutus.html" class="footer-links">About us</a></h4>
+        <h4 class="link-texts"><a href="Services.html" class="footer-links">Services</a></h4>
+        <h4 class="link-texts"><a href="Contact us.html" class="footer-links">Contact us</a></h4>
+    </div>
+    <h2 class="logo" id="footer-logo">mylogo</h2>
+    <div class="contact-info">
+      <p><b>Email:</b> info@gmail.com</p>
+      <p><b>Phone number: </b></p>
+      <p class="phone">+251.......</p>
+      <p class="phone">+251.......</p>
     </div>
   </footer>
 </body>
