@@ -25,7 +25,6 @@ ul li::before {
   top: 0.2vw;
   width: 1.7vw;
   height: 1.7vw;
-  margin-right: ;
   background-image: url('list-icon.PNG');
   background-size: contain;
   background-repeat: no-repeat;
@@ -57,9 +56,9 @@ ul li::before {
     display: flex;
     justify-content: center;
     height: 23vw;
-    /* min-width: ; */
     color:#001F3F;
     margin: 3vw 0%;
+    flex-wrap: wrap;
 }
 
 .basic-left-section, .basic-right-section, .standard-left-section, .standard-right-section,.premium-left-section, .premium-right-section{
@@ -168,14 +167,17 @@ ul li::before {
 .standard-plan-title,.premium-plan-title{
     margin-top: -12%;
 }
+
 .standard-left-section{
     border-radius: 30px 0px 0px 30px;
     box-shadow: -2px 3px 15px #ecedee;
 }
+
 .standard-right-section{
     border-radius: 0px 30px 30px 0px;
     box-shadow: 3px 0px 15px #ecedee;
 }
+
 .premium-right-list{
     margin-top: 0%;
 }
@@ -186,20 +188,18 @@ ul li::before {
 
 /* CUSTOM OFFER */
 
-
-
 .custom-offer{
     display: flex;
     justify-content: space-evenly;
     margin: 5% 0%;
+    flex-wrap: wrap;
 }
 
 #custom-offer-text{
     display: flex;
     margin-top: 5%;
     font-size: 2.5vw;
-    font-weight: bold;
-    
+    font-weight: bold;    
 }
 
 .btn-get-offer{
@@ -207,15 +207,12 @@ ul li::before {
     color: white;
     border-radius: 100px;
     padding: 2% 10%;
-    font-size: 110%;
+    font-size: 1vw;
     font-weight: 550;
     border: none;
     margin: 5% 0%;
     letter-spacing: 1.2px;
 }
-
-
-
 
 /* FOOTER */
 
@@ -260,3 +257,7 @@ footer{
 .phone{
     margin-left: 10%;
 }
+
+
+/* When wrapped */
+

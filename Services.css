@@ -16,7 +16,7 @@ body{
 }
 
 .services-heading{
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: center;
     font-weight: bold;
     font-size: 90%;
@@ -30,26 +30,34 @@ body{
     font-size: 300%;
 }
 
-.service-boxes{
+.core-service-boxes{
     display: flex;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    align-content: space-around;
-    gap: 2%;
-    margin: 3% 0%;
+    justify-content: center;
+    margin: 7% 5%;
+    flex-wrap: wrap;
+    gap: 3px;
 }
 
-.service-box{
+.core-service-box-top, .core-service-box-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #00133F;
     color: white;
-    width: 12%;
-    padding: 2%;
-    text-align: center;
-    border-radius: 30px;
-    font-size: 140%;
+    width: 14em;
+    height: 11em;
+    font-size: 24px;
+    clip-path: polygon(100% 50%, 75% 0%, 25% 0%, 0% 50%, 25% 100%, 75% 100%);
 }
 
+.core-service-box-top{
+    margin-top: -6%;
+}
 
+.core-service-box-bottom{
+    margin: 5% -7.2%;
+}
 
 .expanded-services{
     background-color: #00133F;
@@ -77,33 +85,46 @@ body{
     font-weight: lighter;
 }
 
-.comprehensive-services{
+
+.comprehensive-services {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 5%;
-    margin-left: 3%;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 3em;
+    margin: 5% 3%;
 }
 
-.third-section-title{
-    margin-top: 10%;
-    font-size: 3vw;
+
+.third-section-title {
+    margin-top: 13%;
+    font-size: 2.3rem;
     font-weight: bold;
+    text-align: center;
 }
 
-.service-tags{
+.service-tags-top,.service-tags-bottom {
     display: flex;
-    flex-direction: column;
-    margin: 3% 0%;
-    font-size: 1.1vw;
+    justify-content: center;
+    gap: 1px;
 }
 
-.tag{
+.service-tags-bottom {
+    margin-left: 16.3em;
+    margin-top: -4.3em; 
+}
+
+.tag-1, .tag-2, .tag-3, .tag-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: #00133F;
     color: white;
-    width: 100%;
-    padding: 5%;
-    margin-bottom: 4%;
-    text-align: center;
-    border-radius: 30px;
-    font-size: 1.2vw;
+    width: 13em;
+    height: 14em;
+    font-size: 20px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
 }
+
+
