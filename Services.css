@@ -8,6 +8,30 @@
 body{
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    color: #00133F;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.8vw;
+  margin-bottom: 0.9vw;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2vw;
+  width: 1.7vw;
+  height: 1.7vw;
+  background-image: url('list-icon.PNG');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .nav-links{
@@ -35,7 +59,7 @@ body{
     justify-content: center;
     margin: 7% 5%;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: 4px;
 }
 
 .core-service-box-top, .core-service-box-bottom{
@@ -49,6 +73,9 @@ body{
     height: 11em;
     font-size: 24px;
     clip-path: polygon(100% 50%, 75% 0%, 25% 0%, 0% 50%, 25% 100%, 75% 100%);
+    background: #00133F;
+    box-shadow: inset 20px 20px 40px #000c27,
+                inset -20px -20px 40px #001a57;
 }
 
 .core-service-box-top{
@@ -59,15 +86,11 @@ body{
     margin: 5% -7.2%;
 }
 
-.expanded-services{
-    background-color: #00133F;
-    color: white;
-    width: 100%;
-    padding: 1% 0;
-}
 
 .expanded-services-content{
-    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 12%;
 }
 
 .second-section-title{
@@ -76,13 +99,30 @@ body{
     margin-bottom: 2%;
 }
 
-.service-item-list{
-    font-size: 120%;
+.service-item{
+    color: white;
+    width: 20em;
+    height: 20em;
+    border-radius: 51px;
+    background: #00133F;
+    box-shadow: inset 20px 20px 40px #000c27,
+                inset -20px -20px 40px #001a57;
+    
+}
+
+
+.service-item-title{
+    font-size: 150%;
+    margin-left: 4%;
+    text-align: center;
 }
 
 .service-item-content{
     font-family: 'Inter';
     font-weight: lighter;
+    font-size: 1rem;
+    margin: 5% 4%;
+    text-align: center;
 }
 
 
@@ -118,13 +158,15 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #00133F;
+    /* background-color: #00133F; */
     color: white;
     width: 13em;
     height: 14em;
     font-size: 20px;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-
+    background: #00133F;
+    box-shadow: inset 20px 20px 40px #000c27,
+                inset -20px -20px 40px #001a57;
 }
 
 
