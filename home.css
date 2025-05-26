@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width:100%;
+  color: #fff;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('istockphoto-1462014819-612x612.jpg'); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px) brightness(0.7);
+  z-index: -1;
+}
+
+.btn-get-offer{
+    background-color:#001F3F;
+    color: white;
+    border-radius: 100px;
+    padding: 2% 10%;
+    font-size: 110%;
+    font-weight: 550;
+    border: none;
+    margin: 5% 0%;
+    letter-spacing: 1.2px;
+}
+
+header,
+.hero,
+.features,
+section {
+  position: relative;
+  z-index: 1;
+
+}
+header{
+    width:full;
+  display:flex ;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.hero-text h1,
+.hero-text p,
+nav ul li a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+nav ul li a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+nav ul li a:hover {
+  color: #001f3f; 
+}
+
+
+nav ul li a.active {
+  color: #001f3f; 
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.hero-text button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #001f3f;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.feature-box {
+  background-color: rgba(238, 242, 252, 0.9); /* Semi-transparent */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  color: #000;
+}
+
+.feature-box h3 {
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.feature-box img {
+  width: 40px;
+  height: auto;
+}
+
+
+.services-section {
+  background-color: white;
+  color: #001f3f;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.services-section .italic {
+  font-style: italic;
+}
+
+
+.services-section {
+  background-color: white;
+  color: #001f3f;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+.services-section .italic {
+  font-style: italic;
+}
+
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Each box */
+.service-box {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+/* Hover motion */
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+
+.service-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #001f3f;
+  margin: 0;
+  text-align: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001F3F;
+    color: white;
+    font-size: 1.9w;
+}
+
+.footer-links-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 90%;
+    gap: 15%;
+}
+
+.link-texts, .phone,.contact-info{
+    white-space: nowrap; 
+    font-weight: lighter;
+    font-size: 1.2vw;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: none;
+}
+
+#footer-logo{
+    font-size: 2vw;
+    /* for editing logo */
+}
+
+.contact-info{
+    margin-right: 10%;
+}
+
+.phone{
+    margin-left: 10%;
+}
+
+

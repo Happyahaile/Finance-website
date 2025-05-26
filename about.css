@@ -1,0 +1,174 @@
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        color: #1e1e1e;
+        background-color: #ffffff;
+      }
+
+      header.hero {
+        background: whitesmoke;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+      }
+
+      header.hero h1 {
+        font-size: 3rem;
+        background: rgba(0, 0, 50, 0.6);
+        padding: 20px 40px;
+        border-radius: 8px;
+      }
+        /* Navigation Bar */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Navy Blue */
+  padding: 20px 10%;
+  /*position: sticky;*/
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: goldenrod; /* Highlight color on hover or active */
+}
+
+.aboutus-heading{
+      margin-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #001F3F;
+    letter-spacing: 3px;
+}
+.first-section-title{
+    text-align: center;
+    font-weight:bolder;
+    font-size: 300%;
+}
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 20px;
+      }
+
+      .about-section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+      }
+
+      .about-text {
+        flex: 1;
+        padding-right: 30px;
+      }
+
+      h2 {
+        color: #0b1a36;
+        margin-bottom: 20px;
+      }
+
+      .why-choose {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .why-img {
+        flex: 1;
+      }
+
+      .why-img img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .why-list {
+        flex: 1;
+      }
+
+      .why-list ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .why-list li {
+        margin-bottom: 16px;
+        font-weight: bold;
+        color: #0b1a36;
+      }
+
+      .why-list li span {
+        display: block;
+        font-weight: normal;
+        color: #333;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #001f3f;
+        color: white;
+        font-size: 1.2w;
+      }
+
+      .footer-links-section {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 5%;
+        font-size: 90%;
+        gap: 15%;
+      }
+
+      .link-texts,
+      .phone,
+      .contact-info {
+        white-space: nowrap;
+        font-weight: lighter;
+        font-size: 1.2vw;
+      }
+
+      .footer-links {
+        color: white;
+        text-decoration: dotted;
+      }
+
+      #footer-logo {
+        font-size: 2vw;
+      }
+
+      .contact-info {
+        margin-right: 10%;
+      }
+
+      .phone {
+        margin-left: 10%;
+      }

@@ -11,29 +11,6 @@ body{
     color: #00133F;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-ul li {
-  position: relative;
-  padding-left: 1.8vw;
-  margin-bottom: 0.9vw;
-}
-
-ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.2vw;
-  width: 1.7vw;
-  height: 1.7vw;
-  background-image: url('list-icon.PNG');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .nav-links{
     display: flex;
     justify-content: space-between;
@@ -54,12 +31,16 @@ ul li::before {
     font-size: 300%;
 }
 
+.core-services{
+    margin-right: 80px;
+}
+
 .core-service-boxes{
     display: flex;
     justify-content: center;
-    margin: 7% 5%;
-    flex-wrap: wrap;
-    gap: 4px;
+    margin: 70px 50px;
+    /* flex-wrap: wrap; */
+    /* gap: 0px; */
 }
 
 .core-service-box-top, .core-service-box-bottom{
@@ -79,50 +60,69 @@ ul li::before {
 }
 
 .core-service-box-top{
-    margin-top: -6%;
+    margin-top: -55px;
 }
 
 .core-service-box-bottom{
-    margin: 5% -7.2%;
+    margin: 75px -80px;
 }
 
-
-.expanded-services-content{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 12%;
+.expanded-services{
+    background-color: #00133F;
+    padding: 2% 0%;
 }
 
 .second-section-title{
     font-weight: bold;
     font-size: 250%;
     margin-bottom: 2%;
+    text-align: center;
+    color: white;
 }
 
-.service-item{
+.expanded-service-item{
     color: white;
     width: 20em;
     height: 20em;
     border-radius: 51px;
-    background: #00133F;
-    box-shadow: inset 20px 20px 40px #000c27,
-                inset -20px -20px 40px #001a57;
-    
+    background: white;
+    box-shadow: inset 20px 20px 20px  #716e80,
+                inset -20px -20px 20px #ffffff;
+    margin: 2% 0%;
 }
 
+.expanded-services-items-top, .expanded-services-items-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
-.service-item-title{
+.expanded-service-item-icon{
+    width: 20%;
+    height: 20%;
+    margin: 5% auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+    background-color: white;
+}
+
+.expanded-service-item-title{
     font-size: 150%;
     margin-left: 4%;
     text-align: center;
+    color: #00133F;
 }
 
-.service-item-content{
+.expanded-service-item-content{
     font-family: 'Inter';
-    font-weight: lighter;
-    font-size: 1rem;
-    margin: 5% 4%;
+    font-weight: 100;
+    font-size: 0.9em;
+    margin: 5% 5%;
     text-align: center;
+    color: #00133F;
 }
 
 
@@ -169,4 +169,75 @@ ul li::before {
                 inset -20px -20px 40px #001a57;
 }
 
+.consultation-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+}
+
+.consultation-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #001F3F;
+}
+
+.consultation-button{
+    background-color:#001F3F;
+    color: white;
+    border-radius: 100px;
+    padding: 2% 10%;
+    font-size: 1vw;
+    font-weight: 550;
+    border: none;
+    margin: 2% 0%;
+    letter-spacing: 1.2px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001F3F;
+    color: white;
+    font-size: 1.2w;
+}
+
+.footer-links-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 90%;
+    gap: 15%;
+}
+
+.link-texts, .phone,.contact-info{
+    white-space: nowrap; 
+    font-weight: lighter;
+    font-size: 1.2vw;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: dotted;
+}
+
+#footer-logo{
+    font-size: 2vw;
+    /* for editing logo */
+}
+
+.contact-info{
+    margin-right: 10%;
+}
+
+.phone{
+    margin-left: 10%;
+}
 

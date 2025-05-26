@@ -1,10 +1,3 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 1%;
-    font-size: 120%;
-}
-
 .contact-illustration{
     width: 30%;
     margin-right: 5%;
@@ -51,7 +44,7 @@ img{
 
 .contact-email, .contact-phone{
     font-family: DMSans, sans-serif;
-    /* margin-bottom: 5%; */
+    margin-bottom: 5%;
     margin-left: 40%;
     justify-content: space-evenly;
     font-size: 130%;
@@ -70,4 +63,48 @@ img{
     font-size: 130%;
     font-family: DMSans, sans-serif;
 
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001F3F;
+    color: white;
+    font-size: 1.2w;
+}
+
+.footer-links-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5%;
+    font-size: 90%;
+    gap: 15%;
+}
+
+.link-texts, .phone,.contact-info{
+    white-space: nowrap; 
+    font-weight: lighter;
+    font-size: 1.2vw;
+}
+
+.footer-links{
+    color: white;
+    text-decoration: dotted;
+}
+
+#footer-logo{
+    font-size: 2vw;
+    /* for editing logo */
+}
+
+.contact-info{
+    margin-right: 10%;
+}
+
+.phone{
+    margin-left: 10%;
 }

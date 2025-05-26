@@ -5,126 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Growth Homepage</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Inter", sans-serif;
-      }
-
-      body {
-        background-color: #f9f9f9;
-        color: #000;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 10%;
-        background-color: #fff;
-      }
-
-      .logo {
-        font-weight: 700;
-        font-size: 1.5rem;
-        color: #000;
-      }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-      }
-
-      .hero {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 60px 10%;
-        background-color: #001f3f;
-        color: #fff;
-      }
-
-      .hero-text {
-        max-width: 500px;
-      }
-
-      .hero-text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      .hero-text p {
-        margin-bottom: 20px;
-        font-size: 1rem;
-      }
-
-      .hero-text button {
-        padding: 10px 20px;
-        background-color: #fff;
-        color: #001f3f;
-        border: none;
-        cursor: pointer;
-        font-weight: 600;
-      }
-
-      .features {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 60px 10%;
-      }
-
-      .feature-box {
-        background-color: #eef2fc;
-        padding: 30px;
-        border-radius: 12px;
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-      }
-
-      .feature-box h3 {
-        margin: 20px 0 10px;
-        font-size: 1.2rem;
-      }
-
-      .feature-box p {
-        font-size: 0.95rem;
-        color: #333;
-      }
-
-      .feature-box img {
-        width: 40px;
-        height: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
     <header>
-      <div class="logo">mylogo</div>
+      <div class="logo">GUDAY</div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="Aboutus.html">About Us</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="Services.html">Service</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li><a href="Contact us.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-
     <section class="hero">
       <div class="hero-text">
         <h1>TRACK YOUR BUSINESS GROWTH</h1>
@@ -133,13 +31,10 @@
           bookkeeping, tax consultancy and other financial services as per your
           need.
         </p>
-        <button>GET STARTED</button>
+        <a href="Services.html">
+          <button class="btn-get-offer">Get Offer</button>
+        </a>
       </div>
-      <img
-        src="Financial data-amico.png"
-        alt="Business illustration"
-        width="300"
-      />
     </section>
 
     <section class="features">
@@ -177,40 +72,49 @@
         </p>
       </div>
     </section>
-    <section
-      style="
-        padding: 50px 10%;
-        background-color: #001f3f;
-        color: #fff;
-        text-align: center;
-      "
-    >
-      <h2 style="font-size: 1.8rem; margin-bottom: 20px">What We Offer</h2>
-      <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 20px">
-        We provide a full range of financial services to support your business:
-      </p>
-      <ul
-        style="
-          list-style-type: disc;
-          text-align: left;
-          max-width: 700px;
-          margin: 0 auto;
-          padding-left: 20px;
-        "
-      >
-        <li>Bookkeeping & Catch-up Services</li>
-        <li>Tax Advisory & Payroll Management</li>
-        <li>Financial Reporting & Record Cleanup</li>
-        <li>Business Setup & Other Financial Support</li>
-      </ul>
-      <p style="margin-top: 20px">
-        <a
-          href="Service.html"
-          style="color: #fff; text-decoration: underline; font-weight: 600"
-        >
-          Learn more on our Services page →
-        </a>
-      </p>
+    <section class="services-section">
+      <h2>Our <span class="italic">Services</span></h2>
+      <div class="services-wrapper">
+        <!-- Left Side -->
+        <div class="service-box left pop-left">
+          <h3>Bookkeeping Services</h3>
+        </div>
+        <div class="service-box left pop-left">
+          <h3>Financial Reporting</h3>
+        </div>
+
+        <!-- Right Side -->
+        <div class="service-box right pop-right">
+          <h3>Tax Services & Advisory</h3>
+        </div>
+        <div class="service-box right pop-right">
+          <h3>Payroll Management</h3>
+        </div>
+      </div>
     </section>
+
+    <footer>
+      <div class="footer-links-section">
+        <h4 class="link-texts">
+          <a href="Home.html" class="footer-links">Home</a>
+        </h4>
+        <h4 class="link-texts">
+          <a href="Aboutus.html" class="footer-links">About us</a>
+        </h4>
+        <h4 class="link-texts">
+          <a href="Services.html" class="footer-links">Services</a>
+        </h4>
+        <h4 class="link-texts">
+          <a href="Contact us.html" class="footer-links">Contact us</a>
+        </h4>
+      </div>
+      <h2 class="logo" id="footer-logo">GUDAY</h2>
+      <div class="contact-info">
+        <p><b>Email:</b> info@gmail.com</p>
+        <p><b>Phone number: </b></p>
+        <p class="phone">+251.......</p>
+        <p class="phone">+251.......</p>
+      </div>
+    </footer>
   </body>
 </html>
