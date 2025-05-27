@@ -2,8 +2,44 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'DMSans', sans-serif;
+    color: #001F3F;
 }
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Navy Blue */
+  padding: 20px 10%;
+  /*position: sticky;*/
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: goldenrod; /* Highlight color on hover or active */
+}
 .contact-illustration{
     width: 30%;
     margin-right: 5%;
@@ -68,7 +104,6 @@ img{
     justify-content: center;
     margin-left: 10%;
     font-size: 130%;
-    font-family: DMSans, sans-serif;
 
 }
 
@@ -150,7 +185,7 @@ footer{
         margin: auto 10%;
         text-align: justify;
         display: flex;
-        font-size: 4vw;        
+        font-size: 4vw;   
     }
 
     footer{
