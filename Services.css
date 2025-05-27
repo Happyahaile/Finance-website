@@ -1,8 +1,36 @@
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 1%;
-    font-size: 120%;
+/* NAVIAGTION BAR */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Navy Blue */
+  padding: 20px 10%;
+  /*position: sticky;*/
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+  color: goldenrod; /* Highlight color on hover or active */
 }
 
 body{
@@ -11,13 +39,8 @@ body{
     color: #00133F;
 }
 
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-}
-
 .services-heading{
-    margin-top: 2%;
+    margin-top: 2.5%;
     text-align: center;
     font-weight: bold;
     font-size: 90%;
@@ -29,43 +52,44 @@ body{
     text-align: center;
     font-weight:bolder;
     font-size: 300%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.core-services{
-    margin-right: 80px;
+.core-services {
+    margin-right: 5.5vw;
 }
 
-.core-service-boxes{
+.core-service-boxes {
     display: flex;
     justify-content: center;
-    margin: 70px 50px;
-    /* flex-wrap: wrap; */
-    /* gap: 0px; */
+    margin: 4.9vw 3.5vw;
 }
 
-.core-service-box-top, .core-service-box-bottom{
+.core-service-box-top, .core-service-box-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: #00133F;
     color: white;
-    width: 14em;
-    height: 11em;
-    font-size: 24px;
+    width: 25vw;
+    height: 18vw;
+    font-size: 1.7vw;
     clip-path: polygon(100% 50%, 75% 0%, 25% 0%, 0% 50%, 25% 100%, 75% 100%);
     background: #00133F;
-    box-shadow: inset 20px 20px 40px #000c27,
-                inset -20px -20px 40px #001a57;
+    box-shadow: inset 1.4vw 1.4vw 2.8vw #000c27,
+                inset -1.4vw -1.4vw 2.8vw #001a57;
 }
 
-.core-service-box-top{
-    margin-top: -55px;
+.core-service-box-top {
+    margin-top: -3.8vw;
 }
 
-.core-service-box-bottom{
-    margin: 75px -80px;
+.core-service-box-bottom {
+    margin: 5.2vw -6vw;
 }
+
 
 .expanded-services{
     background-color: #00133F;
@@ -125,15 +149,12 @@ body{
     color: #00133F;
 }
 
-
 .comprehensive-services {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     gap: 3em;
     margin: 5% 3%;
 }
-
 
 .third-section-title {
     margin-top: 13%;
@@ -142,31 +163,30 @@ body{
     text-align: center;
 }
 
-.service-tags-top,.service-tags-bottom {
+.service-tags-top, .service-tags-bottom {
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 0.15vw;
 }
 
 .service-tags-bottom {
-    margin-left: 16.3em;
-    margin-top: -4.3em; 
+    margin-left: 19vw;
+    margin-top: -4.8vw; 
 }
 
-.tag-1, .tag-2, .tag-3, .tag-4{
+.tag-1, .tag-2, .tag-3, .tag-4 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* background-color: #00133F; */
     color: white;
-    width: 13em;
-    height: 14em;
-    font-size: 20px;
+    width: 19vw;
+    height: 19.8vw;
+    font-size: 1.4vw;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     background: #00133F;
-    box-shadow: inset 20px 20px 40px #000c27,
-                inset -20px -20px 40px #001a57;
+    box-shadow: inset 1.4vw 1.4vw 2.8vw #000c27,
+                inset -1.4vw -1.4vw 2.8vw #001a57;
 }
 
 .consultation-section{
@@ -205,7 +225,6 @@ footer{
     align-items: center;
     background-color: #001F3F;
     color: white;
-    font-size: 1.2w;
 }
 
 .footer-links-section{
@@ -225,7 +244,6 @@ footer{
 
 .footer-links{
     color: white;
-    text-decoration: dotted;
 }
 
 #footer-logo{
@@ -241,3 +259,82 @@ footer{
     margin-left: 10%;
 }
 
+@media (max-width: 800px) {
+    .first-section-title, .second-section-title, .third-section-title, .consultation-title{
+        font-size: 190%;
+    }
+    
+    .core-service-box-top,.core-service-box-bottom{
+        font-size: 70%;
+        width: 32vw;
+        height: 25vw;
+        
+    }
+
+    .core-service-box-bottom{
+        margin-top: 10%;
+        
+    }
+
+    .comprehensive-services{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comprehensive-services-boxes{
+        margin-top: -10%;
+    }
+
+    .tag-1, .tag-2, .tag-3, .tag-4 {
+        width: 35vw;
+        height: 35vw;
+        font-size: 3vw;
+
+    }
+
+    .service-tags-top{
+        margin-right: 18%;
+        gap : 0.7vw;
+    }
+
+    .service-tags-bottom{
+        margin-top: -9%;
+        gap : 0.7vw;
+    }
+
+    .consultation-section{
+        margin-top: -9%;
+    }
+
+    .consultation-button{
+        padding: 5% 20%;
+        font-size: 3vw;
+    }
+
+    footer{
+        padding: 5%;
+    }
+
+    #footer-logo{
+        align-items: start;
+        order: 1;
+        font-size: 4vw;
+    }
+
+    .footer-links-section{
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        font-size: 10vw;
+    }
+
+    .link-texts,.contact-info,.phone{
+        font-size: 2vw;
+    }
+
+    .contact-info,.phone{
+        order: 3;
+        font-size: 2.5vw;
+        margin-right: 0;
+    }
+}
