@@ -13,8 +13,13 @@
   <body>
     <header>
       <div class="logo">GUDAY</div>
+      <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="Aboutus.html">About Us</a></li>
           <li><a href="Services.html">Service</a></li>
@@ -23,6 +28,7 @@
         </ul>
       </nav>
     </header>
+
     <section class="hero">
       <div class="hero-text">
         <h1>TRACK YOUR BUSINESS GROWTH</h1>
@@ -72,22 +78,20 @@
         </p>
       </div>
     </section>
+
     <section class="services-section">
       <h2>Our <span class="italic">Services</span></h2>
       <div class="services-wrapper">
-        <!-- Left Side -->
-        <div class="service-box left pop-left">
+        <div class="service-box">
           <h3>Bookkeeping Services</h3>
         </div>
-        <div class="service-box left pop-left">
+        <div class="service-box">
           <h3>Financial Reporting</h3>
         </div>
-
-        <!-- Right Side -->
-        <div class="service-box right pop-right">
+        <div class="service-box">
           <h3>Tax Services & Advisory</h3>
         </div>
-        <div class="service-box right pop-right">
+        <div class="service-box">
           <h3>Payroll Management</h3>
         </div>
       </div>
@@ -95,26 +99,29 @@
 
     <footer>
       <div class="footer-links-section">
-        <h4 class="link-texts">
-          <a href="Home.html" class="footer-links">Home</a>
-        </h4>
-        <h4 class="link-texts">
-          <a href="Aboutus.html" class="footer-links">About us</a>
-        </h4>
-        <h4 class="link-texts">
-          <a href="Services.html" class="footer-links">Services</a>
-        </h4>
-        <h4 class="link-texts">
-          <a href="Contact us.html" class="footer-links">Contact us</a>
-        </h4>
+        <a href="Home.html" class="footer-links">Home</a>
+        <a href="Aboutus.html" class="footer-links">About us</a>
+        <a href="Services.html" class="footer-links">Services</a>
+        <a href="Contact us.html" class="footer-links">Contact us</a>
       </div>
       <h2 class="logo" id="footer-logo">GUDAY</h2>
       <div class="contact-info">
         <p><b>Email:</b> info@gmail.com</p>
-        <p><b>Phone number: </b></p>
+        <p><b>Phone number:</b></p>
         <p class="phone">+251.......</p>
         <p class="phone">+251.......</p>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.getElementById("burger");
+        const navLinks = document.querySelector(".nav-links");
+
+        burger.addEventListener("click", () => {
+          navLinks.classList.toggle("show");
+        });
+      });
+    </script>
   </body>
 </html>
