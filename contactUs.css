@@ -1,3 +1,57 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3f; /* Navy Blue */
+  padding: 20px 10%;
+  /*position: sticky;*/
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: goldenrod; /* Highlight color on hover or active */
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+/* END OF NAV BAR */
+
 body{
     margin: 0;
     padding: 0;
@@ -152,7 +206,27 @@ footer{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        background-color:navy;
+        padding: 1rem;
+        border-radius: 8px;
+        z-index: 999;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    } 
+    
     .contact-heading{
         display: none;
     }

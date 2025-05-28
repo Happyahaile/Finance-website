@@ -35,24 +35,44 @@
 .nav-links li a.active {
   color: goldenrod; /* Highlight color on hover or active */
 }
+
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+/* END OF NAV BAR */
+
 body{
     margin: 0;
     font-family: 'DM Sans', sans-serif;
     color: #001F3F;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.basic-right-list, .standard-left-list, .premium-right-list{
+    margin-top: 0.5vw;
+    list-style: none;
+    padding-left: 0;
 }
 
-ul li {
+.basic-right-list li, .standard-left-list li, .premium-right-list li {
   position: relative;
   padding-left: 1.8vw;
   margin-bottom: 0.9vw;
 }
 
-ul li::before {
+.basic-right-list li::before, .standard-left-list li::before, .premium-right-list li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -65,10 +85,10 @@ ul li::before {
 }
 
 .pricing-heading{
-    margin-top: 5%;
+    margin-top: 2.5%;
     text-align: center;
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: 90%;
     color: #001F3F;
     letter-spacing: 3px;
 }
@@ -92,7 +112,6 @@ ul li::before {
     height: 23vw;
     color:#001F3F;
     margin: 3vw 0%;
-    flex-wrap: wrap;
 }
 
 .basic-left-section, .basic-right-section, .standard-left-section, .standard-right-section,.premium-left-section, .premium-right-section{
@@ -141,13 +160,6 @@ ul li::before {
     font-size: 1.8vw;
 }
 
-.basic-plan-description, .standard-plan-description, .premium-plan-description{
-    color: #6F6C90;
-    font-size: 1vw;
-    margin-top: -1%;
-    font-weight: lighter;
-}
-
 .basic-price-range, .standard-price-range, .premium-price-range{
     font-size: 2vw;
     font-weight: 600;
@@ -166,6 +178,7 @@ ul li::before {
     border: none;
     margin: 5% 0%;
     letter-spacing: 1.2px;
+    text-decoration: none;
 }
 
 .basic-right-section, .standard-left-section, .premium-right-section{
@@ -246,6 +259,7 @@ ul li::before {
     border: none;
     margin: 5% 0%;
     letter-spacing: 1.2px;
+    text-decoration: none;
 }
 
 /* FOOTER */
@@ -276,7 +290,7 @@ footer{
 
 .footer-links{
     color: white;
-    text-decoration: dotted;
+    text-decoration: none;
 }
 
 #footer-logo{
@@ -293,5 +307,157 @@ footer{
 }
 
 
-/* When wrapped */
+/* PHONE DISPLAY */
 
+@media (max-width: 800px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        background-color:navy;
+        padding: 1rem;
+        border-radius: 8px;
+        z-index: 999;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }    
+
+    .page-title{
+        font-size: 190%;
+    }
+
+    .page-description{
+        font-size: 80%;
+        margin-bottom: 27%;
+    }
+
+    .pricing-card-basic,.pricing-card-standard,.pricing-card-premium{
+        flex-direction: column;
+        margin: 20% 0%;
+        align-items: center;
+        margin-bottom: 50%;
+    }
+
+    .pricing-card-standard{
+        flex-direction: column-reverse;
+    }
+
+    .basic-left-section, .standard-right-section, .premium-left-section, .basic-right-section, .standard-left-section, .premium-right-section{
+        width: 70%;
+        border-radius: 30px 30px 0px 0px;
+        padding-bottom: 10%;
+    }
+
+    .basic-right-section, .standard-left-section, .premium-right-section{
+        background-color: #F7F7FC;
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 3px 0px 15px #ecedee;
+    }
+
+    .basic-icon, .standard-icon, .premium-icon{
+        width: 13%;
+        height: 13%;
+    }
+
+    .basic-plan-intro, .standard-plan-intro, .premium-plan-intro{
+        font-size: 80%;
+    }
+
+    .basic-plan-title{
+        font-size: 100%;
+        margin-bottom: 15%;
+    }
+
+    .basic-price-range, .standard-price-range, .premium-price-range{
+        font-size: 130%;
+    }
+
+    .btn-basic, .btn-standard, .btn-premium{
+        font-size: 53%;
+    }
+
+    .basic-right-content{
+        margin: 10% 10%;
+    }
+
+    .basic-right-title, .standard-left-title, .premium-right-title{
+        font-size: 60%;
+    }
+
+    .basic-right-list li, .standard-left-list li, .premium-right-list li {
+        padding-left: 2.2vw;
+    }
+
+    .basic-right-list li::before, .standard-left-list li::before, .premium-right-list li::before {
+        top: 0.8vw;
+    }
+
+    .basic-right-lists{
+        font-size: 220%;
+    }
+
+    .basic-right-list, .standard-left-list, .premium-right-list{
+        font-size: 1.2vw;
+        margin-top: 3%;
+    }
+
+    .standard-plan-title, .premium-plan-title{
+        font-size: 100%;
+        margin-bottom: 9%;
+    }
+
+    .standard-left-lists, .premium-right-lists{
+        font-size: 180%;
+
+    }
+    .custom-offer{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -15%;
+    }
+    #custom-offer-text{
+        font-size: 5vw;
+        margin: auto 10%;
+        text-align: center;
+    }
+    .btn-get-offer{
+        padding: 3% 17%;
+        font-size: 3vw;
+    }
+
+    footer{
+        padding: 5%;
+    }
+
+    #footer-logo{
+        align-items: start;
+        order: 1;
+        font-size: 4vw;
+    }
+
+    .footer-links-section{
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+        font-size: 10vw;
+    }
+
+    .link-texts,.contact-info,.phone{
+        font-size: 2vw;
+    }
+
+    .contact-info,.phone{
+        order: 3;
+        font-size: 2.5vw;
+        margin-right: 0;
+    }
+
+}
