@@ -427,6 +427,7 @@ footer{
 
 .consultation-button:hover span {
   animation: scaleUp 0.3s ease-in-out;
+  color: #001F3F;
 }
 
 @keyframes scaleUp {

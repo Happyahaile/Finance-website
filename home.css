@@ -92,14 +92,15 @@
       }
 
       .btn-get-offer {
-        background-color: #001f3f;
+        background-color:#001F3F;
         color: white;
         border-radius: 100px;
-        padding: 12px 30px;
-        font-size: 1rem;
+        padding: 2% 10%;
+        font-size: 1vw;
         font-weight: 550;
         border: none;
-        letter-spacing: 1px;
+        margin: 4% 0%;
+        letter-spacing: 1.2px;
       }
 
       .features {
@@ -250,10 +251,7 @@
         order: 1;
         font-size: 4vw;
     }
-    a{
-    text-decoration: none;
-}
-
+    
     .footer-links-section{
         flex-direction: column;
         align-items: center;
@@ -270,4 +268,48 @@
         font-size: 2.5vw;
         margin-right: 0;
     }
-      }
+}
+
+
+/* ANIMATIONS */
+.btn-get-offer{
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-get-offer::after{
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: gold;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.btn-get-offer:hover::after{
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn-get-offer span{
+  z-index: 2;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-get-offer:hover span {
+  animation: scaleUp 0.3s ease-in-out;
+    color: #001F3F;
+
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}

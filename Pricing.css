@@ -476,7 +476,7 @@ a{
   content: "";
   width: 0%;
   height: 100%;
-  background: #ffd401;
+  background: gold;
   position: absolute;
   transition: all 0.4s ease-in-out;
   top: 0;
@@ -499,6 +499,7 @@ a{
 
 .btn-get-offer:hover span, .btn-basic:hover span, .btn-standard:hover span, .btn-premium:hover span {
   animation: scaleUp 0.3s ease-in-out;
+  color: #001F3F;
 }
 
 @keyframes scaleUp {
