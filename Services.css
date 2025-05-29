@@ -289,9 +289,6 @@ footer{
 }
 
 /* PHONE DISPLAY */
-.menu-toggle {
-  display: none;
-}
 @media (max-width: 800px) {
     .burger {
         display: flex;
