@@ -429,8 +429,8 @@ footer{
         text-align: center;
     }
     .btn-get-offer{
-        padding: 3% 17%;
-        font-size: 3vw;
+        padding: 2% 15%;
+        font-size: 2vw;
     }
 
     footer{
@@ -460,4 +460,45 @@ footer{
         margin-right: 0;
     }
 
+}
+
+/* ANIMATIONS */
+.btn-get-offer, .btn-basic, .btn-standard, .btn-premium {
+  position: relative;
+  display: flex;  
+}
+
+.btn-get-offer::after, .btn-basic::after, .btn-standard::after, .btn-premium::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.btn-get-offer:hover::after, .btn-basic:hover::after, .btn-standard:hover::after, .btn-premium:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn-get-offer span, .btn-basic span, .btn-standard span, .btn-premium span {
+  z-index: 2;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-get-offer:hover span, .btn-basic:hover span, .btn-standard:hover span, .btn-premium:hover span {
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.95); }
+  100% { transform: scale(1); }
 }
