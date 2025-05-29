@@ -59,6 +59,10 @@ body{
     color: #001F3F;
 }
 
+a{
+    text-decoration: none;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -169,7 +173,6 @@ footer{
     align-items: center;
     background-color: #001F3F;
     color: white;
-    font-size: 1.2w;
 }
 
 .footer-links-section{
@@ -185,20 +188,17 @@ footer{
     white-space: nowrap; 
     font-weight: lighter;
     font-size: 1.2vw;
+
 }
 
 .footer-links{
     color: white;
-    text-decoration: dotted;
+    text-decoration: none;
 }
 
 #footer-logo{
     font-size: 2vw;
-    /* for editing logo */
-}
-
-a{
-    text-decoration: none;
+    margin-left: 100%;
 }
 
 .contact-info{
@@ -208,7 +208,6 @@ a{
 .phone{
     margin-left: 10%;
 }
-
 
 @media (max-width: 800px) {
     .burger {

@@ -8,6 +8,9 @@
         box-sizing: border-box;
         font-family: "DM Sans", sans-serif;
       }
+    a{
+      text-decoration: none;
+    }
 
       body::before {
         content: "";
@@ -185,7 +188,6 @@
 
 .footer-links{
     color: white;
-    text-decoration: dotted;
 }
 
 #footer-logo{
@@ -251,6 +253,7 @@
         order: 1;
         font-size: 4vw;
     }
+    
     
     .footer-links-section{
         flex-direction: column;

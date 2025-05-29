@@ -58,6 +58,10 @@ body{
     color: #00133F;
 }
 
+a{
+    text-decoration: none;
+}
+
 .services-heading{
     margin-top: 2.5%;
     text-align: center;
