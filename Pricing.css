@@ -295,7 +295,10 @@ footer{
 
 #footer-logo{
     font-size: 2vw;
-    /* for editing logo */
+}
+
+a{
+    text-decoration: none;
 }
 
 .contact-info{

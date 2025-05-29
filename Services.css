@@ -302,7 +302,8 @@ footer{
         position: absolute;
         top: 70px;
         right: 20px;
-         width: 200px;
+        width: 200px;
+
         flex-direction: column;
         background-color:navy;
         padding: 1rem;
@@ -372,6 +373,10 @@ footer{
         order: 1;
         font-size: 4vw;
     }
+
+    a{
+    text-decoration: none;
+}
 
     .footer-links-section{
         flex-direction: column;

@@ -197,6 +197,10 @@ footer{
     /* for editing logo */
 }
 
+a{
+    text-decoration: none;
+}
+
 .contact-info{
     margin-right: 10%;
 }

@@ -215,6 +215,7 @@
     position: absolute;
     top: 70px;
     right: 20px;
+    width: 200px;
     flex-direction: column;
     background-color:navy;
     padding: 1rem;
@@ -256,10 +257,18 @@ header.hero h1 {
   .why-img {
     order: 1;
   }
+
+  footer{
+        padding: 5%;
+    }
+
   #footer-logo{
         align-items: start;
         order: 1;
         font-size: 4vw;
+    }
+    a{
+      text-decoration: none;
     }
 
     .footer-links-section{
