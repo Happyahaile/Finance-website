@@ -199,22 +199,22 @@
     margin-right: 10%;
 }
 
-.phone{
-    margin-left: 10%;
+.footer-email{
+    color: white;
 }
 
-      .footer-links {
-        color: white;
-        text-decoration: none;
-      }
+.phone-numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+}
 
-      .contact-info {
-        font-size: 0.9rem;
-      }
+.phone{
+    margin-left: 10%;
+    color: white;
+}
 
-      .phone {
-        margin-top: 4px;
-      }
+      
 
       @media (max-width: 800px) {
     
@@ -315,4 +315,9 @@
   0% { transform: scale(1); }
   50% { transform: scale(0.95); }
   100% { transform: scale(1); }
+}
+
+.footer-email:hover,.phone:hover,#footer-logo:hover,.footer-links:hover{
+    color: gold;
+    transition: color 0.3s ease;
 }

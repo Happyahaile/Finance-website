@@ -183,8 +183,14 @@ footer{
     font-size: 2vw;
 }
 
-a{
-    text-decoration: none;
+.footer-email{
+    color: white;
+}
+
+.phone-numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
 }
 
 .contact-info{
@@ -193,6 +199,7 @@ a{
 
 .phone{
     margin-left: 10%;
+    color: white;
 }
 
      
@@ -285,3 +292,8 @@ header.hero h1 {
     }
 }
 
+/* ANIMATION */
+.footer-email:hover,.phone:hover,#footer-logo:hover,.footer-links:hover{
+    color: gold;
+    transition: color 0.3s ease;
+}

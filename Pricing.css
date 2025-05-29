@@ -60,6 +60,10 @@ body{
     color: #001F3F;
 }
 
+a{
+    text-decoration: none;
+}
+
 .basic-right-list, .standard-left-list, .premium-right-list{
     margin-top: 0.5vw;
     list-style: none;
@@ -297,16 +301,23 @@ footer{
     font-size: 2vw;
 }
 
-a{
-    text-decoration: none;
-}
-
 .contact-info{
     margin-right: 10%;
 }
 
+.footer-email{
+    color: white;
+}
+
+.phone-numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+}
+
 .phone{
     margin-left: 10%;
+    color: white;
 }
 
 
@@ -507,4 +518,9 @@ a{
   0% { transform: scale(1); }
   50% { transform: scale(0.95); }
   100% { transform: scale(1); }
+}
+
+.footer-email:hover,.phone:hover,#footer-logo:hover,.footer-links:hover{
+    color: gold;
+    transition: color 0.3s ease;
 }

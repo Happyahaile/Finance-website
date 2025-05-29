@@ -143,12 +143,24 @@ img{
     margin-bottom: 5%;
 }
 
-.contact-email, .contact-phone{
+.main-email,.contact-phone-number{
+    color: #001F3F;
+}
+
+.contact-email, .contact-phone,.contact-phone-number{
     font-family: DMSans, sans-serif;
     margin-bottom: 5%;
     margin-left: 40%;
     justify-content: space-evenly;
     font-size: 130%;
+}
+
+.contact-phone,.contact-phone-number{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30%;
+    margin-top: -1%;
+    font-size: 120%;
 }
 
 .address-block{
@@ -188,7 +200,6 @@ footer{
     white-space: nowrap; 
     font-weight: lighter;
     font-size: 1.2vw;
-
 }
 
 .footer-links{
@@ -205,8 +216,19 @@ footer{
     margin-right: 10%;
 }
 
+.footer-email{
+    color: white;
+}
+
+.phone-numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+}
+
 .phone{
     margin-left: 10%;
+    color: white;
 }
 
 @media (max-width: 800px) {
@@ -293,4 +315,11 @@ footer{
         font-size: 2.5vw;
         margin-right: 0;
     }
+}
+
+/* ANIMATION */
+
+.footer-email:hover,.phone:hover,#footer-logo:hover,.footer-links:hover,.contact-phone-number:hover,.main-email:hover{
+    color: gold;
+    transition: color 0.3s ease;
 }

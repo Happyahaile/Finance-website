@@ -281,15 +281,25 @@ footer{
 
 #footer-logo{
     font-size: 2vw;
-    /* for editing logo */
 }
 
 .contact-info{
     margin-right: 10%;
 }
 
+.footer-email{
+    color: white;
+}
+
+.phone-numbers{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+}
+
 .phone{
     margin-left: 10%;
+    color: white;
 }
 
 /* PHONE DISPLAY */
@@ -438,4 +448,9 @@ footer{
   0% { transform: scale(1); }
   50% { transform: scale(0.95); }
   100% { transform: scale(1); }
+}
+
+.footer-email:hover,.phone:hover,#footer-logo:hover,.footer-links:hover{
+    color: gold;
+    transition: color 0.3s ease;
 }
