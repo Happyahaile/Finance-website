@@ -90,7 +90,7 @@
       }
 
       .hero-text p {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         font-size: 1rem;
       }
 
@@ -98,11 +98,10 @@
         background-color:#001F3F;
         color: white;
         border-radius: 100px;
-        padding: 2% 10%;
-        font-size: 1vw;
+        padding: 4% 20%;
+        font-size: 1.2vw;
         font-weight: 550;
         border: none;
-        margin: 4% 0%;
         letter-spacing: 1.2px;
       }
 
@@ -246,6 +245,10 @@
         .hero {
           flex-direction: column;
           text-align: center;
+        }
+
+        .btn-get-offer {
+          font-size: 1.8vw;
         }
 
     footer{
