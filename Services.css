@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #001f3f; /* Navy Blue */
+  background-color: #40E0D0; /* Turquoise */
   padding: 20px 10%;
   /*position: sticky;*/
   top: 0;
@@ -55,7 +55,7 @@
 body{
     margin: 0;
     font-family: 'DM Sans', sans-serif;
-    color: #00133F;
+    color: black;
 }
 
 a{
@@ -67,7 +67,7 @@ a{
     text-align: center;
     font-weight: bold;
     font-size: 90%;
-    color: #001F3F;
+    color: #40E0D0;
     letter-spacing: 3px;
 }
 
@@ -102,9 +102,9 @@ a{
     height: 18vw;
     font-size: 1.7vw;
     clip-path: polygon(100% 50%, 75% 0%, 25% 0%, 0% 50%, 25% 100%, 75% 100%);
-    background: #00133F;
-    box-shadow: inset 1.4vw 1.4vw 2.8vw #000c27,
-                inset -1.4vw -1.4vw 2.8vw #001a57;
+    background: #40E0D0;
+    box-shadow: inset 1.4vw 1.4vw 2.8vw #2ba69d,
+                inset -1.4vw -1.4vw 2.8vw #60f5e8;
 }
 
 .core-service-box-top {
@@ -118,7 +118,7 @@ a{
 /* SECOND SECTION */
 
 .expanded-services{
-    background-color: #00133F;
+    background-color: #40E0D0;
     padding: 2% 0%;
 }
 
@@ -212,9 +212,9 @@ a{
     height: 19.8vw;
     font-size: 1.4vw;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background: #00133F;
-    box-shadow: inset 1.4vw 1.4vw 2.8vw #000c27,
-                inset -1.4vw -1.4vw 2.8vw #001a57;
+    background: #40E0D0;
+    box-shadow: inset 1.4vw 1.4vw 2.8vw #2ba69d,
+                inset -1.4vw -1.4vw 2.8vw #60f5e8;
 }
 
 /* FOURTH SECTION */
@@ -232,12 +232,12 @@ a{
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    color: #001F3F;
+    color: black;
 }
 
 .consultation-button{
     text-decoration: none;
-    background-color:#001F3F;
+    background-color:#40E0D0;
     color: white;
     border-radius: 100px;
     padding: 2% 10%;
@@ -254,7 +254,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #001F3F;
+    background-color: #40E0D0;
     color: white;
 }
 
@@ -316,7 +316,7 @@ footer{
         width: 200px;
 
         flex-direction: column;
-        background-color:navy;
+        background-color: #40E0D0;
         padding: 1rem;
         border-radius: 8px;
         z-index: 999;
@@ -441,7 +441,7 @@ footer{
 
 .consultation-button:hover span {
   animation: scaleUp 0.3s ease-in-out;
-  color: #001F3F;
+  color: #40E0D0;
 }
 
 @keyframes scaleUp {
