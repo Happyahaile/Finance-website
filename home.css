@@ -167,6 +167,11 @@
         transform: translateY(-10px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       }
+      .service-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
 
  footer{
     display: flex;
@@ -223,7 +228,12 @@
       
 
       @media (max-width: 800px) {
-    
+     .service-box {
+    max-width: 100%;      
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto 20px;   
+  }
         nav ul {
           display: none;
           flex-direction: column;
