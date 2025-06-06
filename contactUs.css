@@ -13,8 +13,11 @@
   color: white;
   font-size: 1.8rem;
   font-weight: bold;
+   transition: color 0.3s ease;
 }
-
+.logo:hover {
+  color: gold;
+}
 /* Nav Links */
 .nav-links {
   list-style: none;
