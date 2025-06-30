@@ -39,9 +39,9 @@
         color: #fff;
          transition: color 0.3s ease;
       }
-.logo:hover {
-  color: gold;
-}
+      .logo:hover {
+        color: gold;
+      }
       nav ul {
         list-style: none;
         display: flex;
@@ -167,10 +167,7 @@
         transform: translateY(-10px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
       }
-      .service-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
+   
 
 
  footer{
@@ -261,7 +258,8 @@
         }
 
         .btn-get-offer {
-          font-size: 1.8vw;
+         /* font-size: 1.8vw;*/
+           font-size: 16px;
         }
 
     footer{
